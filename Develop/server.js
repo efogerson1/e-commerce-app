@@ -1,6 +1,9 @@
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection.js')
+require('dotenv').config();
+console.log(process.env.DB_USER);
+console.log(process.env.DB_NAME);
 // import sequelize connection
 
 const app = express();
