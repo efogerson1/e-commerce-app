@@ -8,6 +8,7 @@ const ProductTag = require('./ProductTag');
 
 Product.belongsTo(Category, {
   foriegnKey: 'category_id',
+  onDelete: 'CASCADE'
 });
 
 // Categories have many Products
